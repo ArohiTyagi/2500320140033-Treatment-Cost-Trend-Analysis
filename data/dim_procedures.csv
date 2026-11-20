@@ -1,0 +1,19 @@
+procedure_id,dept_id,procedure_name,base_cost_inr,complexity_level
+101,1,Coronary Angioplasty (PTCA),185000.0,High
+102,1,Pacemaker Implantation,140000.0,Medium
+103,1,Heart Valve Replacement,280000.0,High
+201,2,Total Knee Replacement,195000.0,High
+202,2,Hip Arthroscopy,135000.0,Medium
+203,2,Spine Lumbar Decompression,160000.0,High
+301,3,Craniotomy for Brain Tumor,260000.0,High
+302,3,Deep Brain Stimulation (DBS),310000.0,High
+303,3,Acute Ischemic Stroke Thrombolysis,110000.0,Medium
+401,4,Chemotherapy Cycle (Inpatient),85000.0,Medium
+402,4,Surgical Oncology Resection,230000.0,High
+403,4,Targeted Immunotherapy Infusion,175000.0,High
+501,5,Laparoscopic Cholecystectomy,65000.0,Low
+502,5,Inguinal Hernia Repair,50000.0,Low
+503,5,Appendectomy,55000.0,Low
+601,6,Pediatric Congenital Defect Repair,125000.0,High
+602,6,Severe Bronchiolitis Inpatient Care,45000.0,Low
+603,6,Pediatric Epilepsy Stabilization,70000.0,Medium

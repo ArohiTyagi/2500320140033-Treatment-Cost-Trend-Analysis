@@ -1,0 +1,7 @@
+dept_id,dept_name,hod_name,budget_cap_inr
+1,Cardiology,Dr. Rajesh Sharma,45000000.0
+2,Orthopedics,Dr. Sunita Verma,35000000.0
+3,Neurology,Dr. Arvind Iyer,40000000.0
+4,Oncology,Dr. Meenakshi Sundaram,50000000.0
+5,General Surgery,Dr. Alok Gupta,28000000.0
+6,Pediatrics,Dr. Pooja Chawla,20000000.0

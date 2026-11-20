@@ -1,0 +1,21 @@
+=====================================================
+DATASET GENERATION VALIDATION REPORT
+=====================================================
+Status: 100% PASSED
+Database File: data\app.db
+Excel File: data\treatment_cost_data.xlsx
+
+Entity Row Counts:
+- dim_departments:       6 rows
+- dim_procedures:        18 rows
+- dim_facilities:        5 rows
+- dim_patients:          250 rows
+- fact_hospital_billing: 350 rows
+- v_treatment_cost_analytics View: 350 records
+
+Foreign Key Integrity: Verified (0 orphaned records)
+Primary Key Uniqueness: Verified (0 duplicate PKs)
+Cost Balance Verification: Room + Surgery + Pharmacy + Lab == Total (100% Match)
+Outlier Share: 2.57% (Target: 2.0% - 4.5%)
+Date Range: 2023-01 to 2026-10 (46 months longitudinal window)
+=====================================================
