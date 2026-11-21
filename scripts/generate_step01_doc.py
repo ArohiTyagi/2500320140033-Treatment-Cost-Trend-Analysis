@@ -83,7 +83,7 @@ def create_document():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis (Interactive Data Analyst Analytics Dashboard)"),
         ("Student / Author", "Arohi Tyagi (Roll No: 2500320140033)"),
-        ("Program & Institution", "MCA 2nd Year (Data Analyst Specialization), ABES Engineering College"),
+        ("Program & Institution", "MCA 2nd Year (Data Analyst), ABES Engineering College"),
         ("Academic Mentor", "Mr. Dinesh"),
         ("Delivery Milestone", "STEP 1 of 18 — Project Understanding Document"),
         ("Technology Baseline", "Python 3.11+, Streamlit, SQLite, Plotly Express, Pytest, Tailwind-styled UI")

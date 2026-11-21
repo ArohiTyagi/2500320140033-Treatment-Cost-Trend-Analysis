@@ -136,7 +136,7 @@ def cover_page(doc):
     rows_data = [
         ("Learner", "Arohi Tyagi"),
         ("Roll No", "2500320140033"),
-        ("Programme / Batch", "MCA 2nd Year Data Analyst — ABES_OND26_MCA"),
+        ("Programme / Batch", "MCA 2nd Year Data Analyst — ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"),
         ("Mentor", "Mr. Dinesh"),
         ("GitHub Repository", "https://github.com/ArohiTyagi/2500320140033-Treatment-Cost-Trend-Analysis"),
         ("Total Files", f"{len(CODE_FILES)} Python source files"),

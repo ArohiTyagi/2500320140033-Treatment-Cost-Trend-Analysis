@@ -12,7 +12,7 @@ An enterprise-grade **Data Analyst & Inpatient Billing Analytics Platform** engi
 ## 👨‍🎓 Project Details
 - **Student / Author:** Arohi Tyagi
 - **Roll Number:** 2500320140033
-- **Program:** MCA 2nd Year (Data Analyst Specialization)
+- **Program:** MCA 2nd Year (Data Analyst)
 - **Institution:** ABES Engineering College, Ghaziabad
 - **Academic Mentor:** Mr. Dinesh
 - **Repository:** [2500320140033-Treatment-Cost-Trend-Analysis](https://github.com/ArohiTyagi/2500320140033-Treatment-Cost-Trend-Analysis.git)

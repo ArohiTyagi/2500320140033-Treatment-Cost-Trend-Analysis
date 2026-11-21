@@ -120,10 +120,20 @@ def main():
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     pPr = p._p.get_or_add_pPr()
-    sp = OxmlElement('w:spacing'); sp.set(qn('w:before'), '1200'); sp.set(qn('w:after'), '120')
+    sp = OxmlElement('w:spacing'); sp.set(qn('w:before'), '800'); sp.set(qn('w:after'), '80')
     pPr.append(sp)
-    r = p.add_run("HCLTech Career Shaper Programme | ABES Engineering College, Ghaziabad")
-    r.bold = True; r.font.size = Pt(10); r.font.color.rgb = RED; r.font.name = "Georgia"
+    logo_file = DOCS / "abes_logo.png"
+    if not logo_file.exists():
+        logo_file = DOCS / "abes_logo.jpg"
+    if logo_file.exists():
+        p.add_run().add_picture(str(logo_file), width=Inches(2.2))
+        p_tag = doc.add_paragraph()
+        p_tag.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        r_tag = p_tag.add_run("ABES Engineering College, Ghaziabad")
+        r_tag.bold = True; r_tag.font.size = Pt(10); r_tag.font.color.rgb = RED; r_tag.font.name = "Georgia"
+    else:
+        r = p.add_run("HCLTech Career Shaper Programme | ABES Engineering College, Ghaziabad")
+        r.bold = True; r.font.size = Pt(10); r.font.color.rgb = RED; r.font.name = "Georgia"
 
     p2 = doc.add_paragraph()
     p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -145,6 +155,11 @@ def main():
     tbl.columns[1].width = Inches(4.5)
     for label, val in [
         ("Learner",           "Arohi Tyagi"),
+        ("Roll No",           "2500320140033"),
+        ("Project ID",         "P106"),
+        ("Domain",             "Data Analyst"),
+        ("Programme / Batch",  "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01"),
+        ("Mentor",            "Mr. Dinesh"),
         ("Roll No",           "2500320140033"),
         ("Mentor",            "Mr. Dinesh"),
         ("GitHub URL",        GITHUB_URL),
@@ -190,10 +205,18 @@ def main():
     label_val(doc, "Pages Verified", "Executive Overview Â· Cost Trends Â· Outlier Detection Â· Procedure Analysis Â· Forecasting Â· Data Explorer")
 
     doc.add_paragraph()
-    screenshot_placeholder(doc,
-        "Screenshot â€” Live Streamlit App (Executive Overview)",
-        "Paste screenshot of the live app opened in an incognito window â€” showing the Executive Overview dashboard"
-    )
+    p_img = doc.add_paragraph()
+    p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    dash_img_file = DOCS / "dashboard_screenshot.png"
+    if not dash_img_file.exists():
+        dash_img_file = DOCS / "dashboard_screenshot.jpg"
+    if dash_img_file.exists():
+        p_img.add_run().add_picture(str(dash_img_file), width=Inches(6.5))
+    else:
+        screenshot_placeholder(doc,
+            "Screenshot — Live Streamlit App (Executive Overview)",
+            "Screenshot of the live app opened in an incognito window"
+        )
 
     out_name = f"{ROLL}_{NAME}_GitHub_Streamlit_Details.docx"
     out_path = DOCS / out_name

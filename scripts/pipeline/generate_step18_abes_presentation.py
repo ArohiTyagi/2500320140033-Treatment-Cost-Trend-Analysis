@@ -1,4 +1,5 @@
 ﻿import pptx
+from pathlib import Path
 from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
@@ -20,16 +21,18 @@ C_WHITE = hex_to_rgb("FFFFFF")
 C_BORDER = hex_to_rgb("D9D9D9")
 
 def add_header_dark(slide):
-    # [ABES logo] (.5,.35,1.6,.5) italic 10 pink, middle, default insets
-    tb_logo = slide.shapes.add_textbox(Inches(0.5), Inches(0.35), Inches(1.6), Inches(0.5))
-    tf_l = tb_logo.text_frame
-    tf_l.vertical_anchor = MSO_ANCHOR.MIDDLE
-    p_l = tf_l.paragraphs[0]
-    p_l.text = "[ABES logo]"
-    p_l.font.name = "Calibri"
-    p_l.font.size = Pt(10)
-    p_l.font.italic = True
-    p_l.font.color.rgb = C_PINK
+    logo_file = Path(__file__).resolve().parents[2] / "docs" / "abes_logo.jpg"
+    if logo_file.exists():
+        slide.shapes.add_picture(str(logo_file), Inches(0.5), Inches(0.32), width=Inches(1.8))
+    else:
+        tb_logo = slide.shapes.add_textbox(Inches(0.5), Inches(0.35), Inches(1.6), Inches(0.5))
+        tf_l = tb_logo.text_frame
+        tf_l.vertical_anchor = MSO_ANCHOR.MIDDLE
+        p_l = tf_l.paragraphs[0]
+        p_l.text = "ABES Engineering College"
+        p_l.font.name = "Calibri"
+        p_l.font.size = Pt(10)
+        p_l.font.color.rgb = C_PINK
 
     # Program text (2.2,.35,7.3,.5) 11 pink, right, middle, default insets
     tb_prog = slide.shapes.add_textbox(Inches(2.2), Inches(0.35), Inches(7.3), Inches(0.5))
@@ -185,10 +188,11 @@ def build_presentation():
     tf_l1.word_wrap = True
     
     lines = [
-        "Arohi Tyagi | Roll No 2500320140P106",
-        "MCA 2nd Year Data Analyst | ABES Engineering College",
-        "Mentor: Mr. Dinesh",
-        "20 November 2026"
+        "Arohi Tyagi | Roll No: 2500320140033",
+        "Project ID: P106 | Domain: Data Analyst",
+        "Batch: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01",
+        "Mentor: Mr. Dinesh | ABES Engineering College",
+        "21 November 2026"
     ]
     for idx, l in enumerate(lines):
         p = tf_l1.paragraphs[0] if idx == 0 else tf_l1.add_paragraph()
@@ -199,7 +203,7 @@ def build_presentation():
         if idx > 0:
             p.space_before = Pt(4)
 
-    set_speaker_notes(s1, "Good morning respected evaluators. My name is Arohi Tyagi, roll number 2500320140P106. Today I present my MCA 2nd Year capstone project, Treatment Cost Trend Analysis, developed under the mentorship of Mr. Dinesh. This platform provides hospital administrators and financial leaders with clear visibility into treatment cost inflation, bed occupancy efficiency, and anomalous billing patterns.")
+    set_speaker_notes(s1, "Good morning respected evaluators. My name is Arohi Tyagi, roll number 2500320140033. Today I present my MCA 2nd Year capstone project, Treatment Cost Trend Analysis, developed under the mentorship of Mr. Dinesh. This platform provides hospital administrators and financial leaders with clear visibility into treatment cost inflation, bed occupancy efficiency, and anomalous billing patterns.")
 
     # =========================================================================
     # SLIDE 2: CONTENT "Problem and How Might We"
@@ -425,21 +429,24 @@ def build_presentation():
     s7 = prs.slides.add_slide(blank_layout)
     add_content_chrome(s7, "Dashboard", 7)
 
-    # Frame (.5,1.25,5.5,3.7): fill F4F1F1, dashed 1 pt BFBFBF
-    frame = s7.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0.5), Inches(1.25), Inches(5.5), Inches(3.7))
-    frame.fill.solid()
-    frame.fill.fore_color.rgb = C_CARD
-    frame.line.color.rgb = hex_to_rgb("BFBFBF")
-    frame.line.width = Pt(1)
-    tf_fr = frame.text_frame
-    tf_fr.vertical_anchor = MSO_ANCHOR.MIDDLE
-    p_fr = tf_fr.paragraphs[0]
-    p_fr.alignment = PP_ALIGN.CENTER
-    p_fr.text = "[Interactive Multipage Dashboard: Overview & Cost Waterfall]"
-    p_fr.font.name = "Calibri"
-    p_fr.font.size = Pt(13)
-    p_fr.font.italic = True
-    p_fr.font.color.rgb = C_GREY
+    dash_file = Path(__file__).resolve().parents[2] / "docs" / "dashboard_screenshot.jpg"
+    if dash_file.exists():
+        s7.shapes.add_picture(str(dash_file), Inches(0.5), Inches(1.25), width=Inches(5.8), height=Inches(3.7))
+    else:
+        frame = s7.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0.5), Inches(1.25), Inches(5.5), Inches(3.7))
+        frame.fill.solid()
+        frame.fill.fore_color.rgb = C_CARD
+        frame.line.color.rgb = hex_to_rgb("BFBFBF")
+        frame.line.width = Pt(1)
+        tf_fr = frame.text_frame
+        tf_fr.vertical_anchor = MSO_ANCHOR.MIDDLE
+        p_fr = tf_fr.paragraphs[0]
+        p_fr.alignment = PP_ALIGN.CENTER
+        p_fr.text = "[Interactive Multipage Dashboard: Overview & Cost Waterfall]"
+        p_fr.font.name = "Calibri"
+        p_fr.font.size = Pt(13)
+        p_fr.font.italic = True
+        p_fr.font.color.rgb = C_GREY
 
     # BADGE x 6.7, y 1.3 / 2.2 / 3.1 / 4.0, numbers 1-4
     screens = [
@@ -625,7 +632,7 @@ def build_presentation():
     tf_l11.word_wrap = True
     
     end_lines = [
-        "App: https://2500320140P106-treatment-cost-analysis.streamlit.app",
+        "App: https://2500320140033-treatment-cost-analysis.streamlit.app",
         "Code: https://github.com/arohityagi/P106-treatment-cost-analysis",
         "Thank you"
     ]

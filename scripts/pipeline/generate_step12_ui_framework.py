@@ -167,6 +167,18 @@ def build_step12():
         p_cr.add_run(f"{oq} -> {c_type}: ").bold = True
         p_cr.add_run(why)
 
+    # Section 3: Live Production Dashboard Interface
+    doc.add_heading("3. Production Deployed Dashboard (Streamlit Cloud)", level=1)
+    doc.add_paragraph("High-resolution capture of the live production dashboard (UI-01 Executive Overview) deployed at https://2500320140033-treatment-cost-trend-analysis-bafa6sbr9kx7s8zfmu.streamlit.app/:")
+    p_live = doc.add_paragraph()
+    p_live.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    from pathlib import Path
+    dash_path = Path(__file__).resolve().parents[2] / "docs" / "dashboard_screenshot.png"
+    if not dash_path.exists():
+        dash_path = Path(__file__).resolve().parents[2] / "docs" / "dashboard_screenshot.jpg"
+    if dash_path.exists():
+        p_live.add_run().add_picture(str(dash_path), width=Inches(6.5))
+
     target_path = "docs/12_UI_Framework.docx"
     doc.save(target_path)
     print(f"Generated: {target_path}")

@@ -79,7 +79,13 @@ def build_pdf():
     normal = ParagraphStyle("norm",
         fontName="Helvetica", fontSize=10, textColor=DARK, spaceAfter=4)
 
-    story.append(Spacer(1, 2*cm))
+    from reportlab.platypus import Image as RLImage
+    logo_p = ROOT / "docs" / "abes_logo.jpg"
+    if logo_p.exists():
+        story.append(RLImage(str(logo_p), width=4.5*cm, height=1.3*cm))
+        story.append(Spacer(1, 0.5*cm))
+    else:
+        story.append(Spacer(1, 2*cm))
     story.append(Paragraph("HCLTech Career Shaper Programme | ABES Engineering College, Ghaziabad",
         ParagraphStyle("hdr", fontName="Helvetica-Bold", fontSize=10, textColor=RED,
                        spaceAfter=12, alignment=1)))
@@ -92,7 +98,9 @@ def build_pdf():
     cover_data = [
         ["Learner",           "Arohi Tyagi"],
         ["Roll No",           "2500320140033"],
-        ["Programme / Batch", "MCA 2nd Year Data Analyst — ABES_OND26_MCA"],
+        ["Programme / Batch", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01"],
+        ["Project ID",         "P106"],
+        ["Domain",             "Data Analyst"],
         ["Mentor",            "Mr. Dinesh"],
         ["Total Files",       f"{len(CODE_FILES)} Python source files"],
         ["Date",              datetime.date.today().strftime("%d/%m/%Y")],

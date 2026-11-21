@@ -1,4 +1,5 @@
 ﻿import docx
+from pathlib import Path
 from docx.shared import Inches, Pt, RGBColor, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
@@ -210,12 +211,17 @@ def build_abes_document():
     r1.font.color.rgb = RGBColor(0xA5, 0x1C, 0x30)
 
     p_logo = doc.add_paragraph()
-    p_logo.paragraph_format.space_after = Pt(5)
-    r_logo = p_logo.add_run("[Insert ABES logo here]")
-    r_logo.font.name = "Calibri"
-    r_logo.font.size = Pt(9)
-    r_logo.font.italic = True
-    r_logo.font.color.rgb = RGBColor(0x7F, 0x7F, 0x7F)
+    p_logo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_logo.paragraph_format.space_before = Pt(8)
+    p_logo.paragraph_format.space_after = Pt(8)
+    r_logo = p_logo.add_run()
+    logo_file = Path(__file__).resolve().parents[2] / "docs" / "abes_logo.png"
+    if not logo_file.exists():
+        logo_file = Path(__file__).resolve().parents[2] / "docs" / "abes_logo.jpg"
+    if logo_file.exists():
+        r_logo.add_picture(str(logo_file), width=Inches(2.4))
+    else:
+        r_logo.text = "[ABES Engineering College]"
 
     p_title = doc.add_paragraph()
     p_title.paragraph_format.space_before = Pt(70)
@@ -250,12 +256,12 @@ def build_abes_document():
     cover_widths = [2900, 6738]
     cover_data = [
         ("Project ID & Title", "P106 - Treatment Cost Trend Analysis"),
-        ("Domain", "Data Analysis (Data Analyst)"),
-        ("Programme / Batch", "MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch P106"),
+        ("Domain", "Data Analyst"),
+        ("Programme / Batch", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01"),
         ("Learner(s) & Roll No(s)", "Arohi Tyagi | Roll No: 2500320140033"),
         ("Mentor", "Mr. Dinesh"),
-        ("GitHub repository", "https://github.com/arohityagi/2500320140033-treatment-cost-trend-analysis"),
-        ("Live app (Streamlit)", "https://25003201402500320140033-treatment-cost-trend-analysis.streamlit.app"),
+        ("GitHub repository", "https://github.com/ArohiTyagi/2500320140033-Treatment-Cost-Trend-Analysis"),
+        ("Live app (Streamlit)", "https://2500320140033-treatment-cost-trend-analysis-bafa6sbr9kx7s8zfmu.streamlit.app/"),
         ("Version & date", "v1.0 - 20/11/2026")
     ]
     for idx, (fld, val) in enumerate(cover_data):
@@ -657,6 +663,25 @@ def build_abes_document():
             row.cells[c_idx].paragraphs[0].add_run(val)
     format_abes_table(t10, t10_widths, has_header=True)
 
+    # Embed Live Production Dashboard Screenshot
+    p_dash_hdr = doc.add_paragraph()
+    p_dash_hdr.paragraph_format.space_before = Pt(14)
+    p_dash_hdr.paragraph_format.space_after = Pt(4)
+    r_dh = p_dash_hdr.add_run("Live Production Dashboard Interface (Executive Overview — UI-01)")
+    r_dh.font.name = "Georgia"
+    r_dh.font.size = Pt(11)
+    r_dh.font.bold = True
+    r_dh.font.color.rgb = RGBColor(0xA5, 0x1C, 0x30)
+
+    p_dash_img = doc.add_paragraph()
+    p_dash_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r_di = p_dash_img.add_run()
+    dash_file = Path(__file__).resolve().parents[2] / "docs" / "dashboard_screenshot.png"
+    if not dash_file.exists():
+        dash_file = Path(__file__).resolve().parents[2] / "docs" / "dashboard_screenshot.jpg"
+    if dash_file.exists():
+        r_di.add_picture(str(dash_file), width=Inches(6.5))
+
     doc.add_page_break()
 
     # =========================================================================
@@ -666,10 +691,10 @@ def build_abes_document():
     add_label(doc, "MY PREFERENCES", color_hex="A51C30")
     add_code(doc,
         "PROJECT ID & TITLE: P106 - Treatment Cost Trend Analysis\n"
-        "DOMAIN: Data Analyst / Data Analyst\n"
+        "DOMAIN: Data Analyst\n"
         "LEARNER(S) & ROLL NO(S): Arohi Tyagi | Roll No: 2500320140033\n"
         "MENTOR: Mr. Dinesh\n"
-        "BATCH: MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch P106\n"
+        "BATCH: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01\n"
         "INTENDED USERS: Hospital CFO, Clinical Department Heads, Health Insurance TPA Claims Managers\n"
         "PROBLEM IN MY WORDS: Healthcare costs escalate unpredictably due to medical inflation and unmonitored length of stay, while billing anomalies cause claim rejections.\n"
         "DATASET: Synthetic longitudinal hospitalization records (350 fact rows, 4 dimensions, 32 columns)\n"

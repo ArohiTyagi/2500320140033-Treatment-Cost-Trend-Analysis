@@ -9,10 +9,10 @@ patches = {
     "scripts/pipeline/generate_step17_abes_project_document.py": [
         ("Project Document | P106",                                "Project Document | P106"),
         ("P106 - Treatment Cost Trend Analysis",                   "P106 - Treatment Cost Trend Analysis"),
-        ("ABES_OND26_MCA Batch P106",                              "ABES_OND26_MCA Batch P106"),
+        ("ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01",                              "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01"),
         ("PROJECT ID & TITLE: 033",                              "PROJECT ID & TITLE: P106"),
-        ("BATCH: MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch P106",
-         "BATCH: MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch P106"),
+        ("BATCH: MCA 2nd Year Data Analyst - ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01",
+         "BATCH: MCA 2nd Year Data Analyst - ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01"),
         ("033-treatment-cost-analysis",                           "2500320140033-treatment-cost-trend-analysis"),
         ("docs/P106_Project_Document.docx",                        "docs/P106_Project_Document.docx"),
         ('"Project ID & Title", "033 -',                          '"Project ID & Title", "P106 -'),
@@ -21,13 +21,13 @@ patches = {
         ("Mr. Dinesh",                                        "Mr. Dinesh"),
     ],
     "scripts/generate_step01_doc.py": [
-        ("ABES_OND26_MCA Batch P106",  "ABES_OND26_MCA Batch P106"),
+        ("ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01",  "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01"),
         ("\"033\"",                    '"P106"'),
         ("'P106'",                      "'P106'"),
         ("Mr. Dinesh",            "Mr. Dinesh"),
     ],
     "scripts/pipeline/generate_step18_abes_presentation.py": [
-        ("ABES_OND26_MCA Batch P106",  "ABES_OND26_MCA Batch P106"),
+        ("ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01",  "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01"),
         ("P106",                        "P106"),
         ("Mr. Dinesh",            "Mr. Dinesh"),
     ],
@@ -45,8 +45,8 @@ global_patches = [
     ("Mr. Dinesh",  "Mr. Dinesh"),
     ("Mr. Dinesh",        "Mr. Dinesh"),
     ("Data Analyst",         "Data Analyst"),
-    ("MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch P106",
-     "MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch P106"),
+    ("MCA 2nd Year Data Analyst - ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01",
+     "MCA 2nd Year Data Analyst - ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01"),
 ]
 
 changed_files = []

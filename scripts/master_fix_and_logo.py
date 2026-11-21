@@ -25,7 +25,7 @@ OLD_NEW = [
     ("Data Analyst",          "Data Analyst"),
     ("data analyst",          "data analyst"),
     ("DATA ANALYST",          "DATA ANALYST"),
-    ("ABES_OND26_MCA Batch P106","ABES_OND26_MCA Batch P106"),
+    ("ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01","ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 2nd Year_Data Analytics_Batch 01"),
     ("Project ID: P106",         "Project ID: P106"),
     ("P106 - Treatment Cost",    "P106 - Treatment Cost"),
     ("\"033\"",                 '"P106"'),
