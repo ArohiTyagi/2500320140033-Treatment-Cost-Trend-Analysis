@@ -30,8 +30,8 @@ df = clean_hospital_data(raw_df)
 
 # 2. Render Tailwind Header
 render_tailwind_header(
-    title="Treatment Cost Trend Analysis Platform",
-    subtitle="Executive Healthcare Economics, Inpatient Expenditure Drift & Billing Audit Intelligence"
+    title="Treatment Cost Trend Analysis",
+    subtitle="Domain: Data Analyst"
 )
 
 # 3. Sidebar Global Filters

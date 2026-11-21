@@ -1,6 +1,6 @@
 ﻿# 🏥 Treatment Cost Trend Analysis (Project ID: P106)
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://2500320140033-treatment-cost-analysis.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://2500320140033-treatment-cost-trend-analysis-bafa6sbr9kx7s8zfmu.streamlit.app/)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tests: Pytest](https://img.shields.io/badge/Tests-16%20Passed-brightgreen.svg)](https://pytest.org/)
@@ -12,11 +12,13 @@ An enterprise-grade **Data Analyst & Inpatient Billing Analytics Platform** engi
 ## 👨‍🎓 Project Details
 - **Student / Author:** Arohi Tyagi
 - **Roll Number:** 2500320140033
-- **Program:** MCA 2nd Year (Data Analyst)
-- **Institution:** ABES Engineering College, Ghaziabad
+- **Project ID:** P106
+- **Domain:** Data Analyst
+- **Batch:** ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01
+- **Program:** MCA 2nd Year, ABES Engineering College, Ghaziabad
 - **Academic Mentor:** Mr. Dinesh
-- **Repository:** [2500320140033-Treatment-Cost-Trend-Analysis](https://github.com/ArohiTyagi/2500320140033-Treatment-Cost-Trend-Analysis.git)
-- **Live Deployment:** [Streamlit Community Cloud](https://2500320140033-treatment-cost-analysis.streamlit.app)
+- **Repository:** [2500320140033-Treatment-Cost-Trend-Analysis](https://github.com/ArohiTyagi/2500320140033-Treatment-Cost-Trend-Analysis)
+- **Live Deployment:** [Streamlit Community Cloud](https://2500320140033-treatment-cost-trend-analysis-bafa6sbr9kx7s8zfmu.streamlit.app/)
 
 ---
 
