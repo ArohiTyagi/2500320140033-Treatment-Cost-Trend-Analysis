@@ -75,7 +75,7 @@ def build_step14():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Student / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
+        ("Academic Mentor", "Mr. Dinesh"),
         ("Execution Roadmap", "10 Modular Build Tasks (BUILD-01 to BUILD-10) with Verification Commands"),
         ("Quality Threshold", "100% Passing Automated Tests & Live Cloud URL")
     ]
@@ -89,9 +89,9 @@ def build_step14():
     # Section 1: Summary
     doc.add_heading("1. Executive Project Summary", level=1)
     doc.add_paragraph(
-        "The Treatment Cost Trend Analysis platform is an enterprise-grade Data Analytics & Inpatient Billing Analytics dashboard. "
-        "Engineered for Arohi Tyagi (Roll No: 2500320140033) in the MCA 2nd Year Data Analytics program at ABES Engineering College "
-        "under mentor Prof. Kalpana Dwivedi. The solution addresses medical inflation unpredictability, unexplained departmental cost drift, "
+        "The Treatment Cost Trend Analysis platform is an enterprise-grade Data Analyst & Inpatient Billing Analytics dashboard. "
+        "Engineered for Arohi Tyagi (Roll No: 2500320140033) in the MCA 2nd Year Data Analyst program at ABES Engineering College "
+        "under mentor Mr. Dinesh. The solution addresses medical inflation unpredictability, unexplained departmental cost drift, "
         "and billing anomalies across hospital networks. The system connects an embedded SQLite database (data/app.db) to a modular "
         "Python analytical engine and renders interactive Plotly visualizations within a Tailwind-styled Streamlit multi-page interface. "
         "The platform tracks month-over-month expenditure trends, calculates departmental CAGR, correlates Length of Stay (LOS) with "

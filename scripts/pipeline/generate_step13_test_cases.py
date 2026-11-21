@@ -75,7 +75,7 @@ def build_step13():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Student / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
+        ("Academic Mentor", "Mr. Dinesh"),
         ("Test Automation Framework", "Pytest 8.3+ with Python 3.12 / 3.15, SQLite 3"),
         ("Overall Test Result", "100% Passed (16 of 16 tests passing, 0 failures, 0 regressions)")
     ]

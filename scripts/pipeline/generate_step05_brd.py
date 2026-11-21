@@ -61,7 +61,7 @@ def build_step05_brd():
 
     p_sub = doc.add_paragraph()
     p_sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    r_sub = p_sub.add_run("Treatment Cost Trend Analysis Platform | Project ID: 033")
+    r_sub = p_sub.add_run("Treatment Cost Trend Analysis Platform | Project ID: P106")
     r_sub.font.name = 'Arial'
     r_sub.font.size = Pt(13)
     r_sub.font.italic = True
@@ -79,8 +79,8 @@ def build_step05_brd():
     dc_table.rows[0].cells[3].paragraphs[0].add_run("Release Status / Remarks")
 
     dc_data = [
-        ("v1.0", "Arohi Tyagi (Lead Analyst)", "Prof. Kalpana Dwivedi", "Initial Baseline Approval"),
-        ("Project ID", "033 - Trend Cost Analysis", "Department", "MCA 2nd Yr (Data Analytics), ABES"),
+        ("v1.0", "Arohi Tyagi (Lead Analyst)", "Mr. Dinesh", "Initial Baseline Approval"),
+        ("Project ID", "P106 - Trend Cost Analysis", "Department", "MCA 2nd Yr (Data Analyst), ABES"),
         ("Date", "November 2026", "Environment", "Streamlit Cloud / SQLite"),
         ("Classification", "Academic Enterprise Capstone", "Traceability Status", "100% Traceable to HMW & OQ")
     ]
@@ -332,8 +332,8 @@ def build_step05_brd():
     sign_table.rows[0].cells[3].paragraphs[0].add_run("Signature Date")
 
     sign_data = [
-        ("Arohi Tyagi", "Lead Student Analyst (Roll: 2500320140033)", "Approved", "20/11/2026"),
-        ("Prof. Kalpana Dwivedi", "Academic Mentor & Evaluator, ABES", "Approved", "20/11/2026"),
+        ("Arohi Tyagi", "Lead Student Analyst (Roll: 2500320140P106)", "Approved", "20/11/2026"),
+        ("Mr. Dinesh", "Academic Mentor & Evaluator, ABES", "Approved", "20/11/2026"),
         ("Hospital Advisory Panel", "Academic Healthcare Subject Proxy", "Approved", "20/11/2026")
     ]
     for idx, vals in enumerate(sign_data):

@@ -81,10 +81,10 @@ def create_document():
     meta_table = doc.add_table(rows=6, cols=2)
     meta_widths = [Inches(2.2), Inches(4.3)]
     meta_data = [
-        ("Project Title", "Treatment Cost Trend Analysis (Interactive Data Analytics Analytics Dashboard)"),
+        ("Project Title", "Treatment Cost Trend Analysis (Interactive Data Analyst Analytics Dashboard)"),
         ("Student / Author", "Arohi Tyagi (Roll No: 2500320140033)"),
-        ("Program & Institution", "MCA 2nd Year (Data Analytics Specialization), ABES Engineering College"),
-        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
+        ("Program & Institution", "MCA 2nd Year (Data Analyst Specialization), ABES Engineering College"),
+        ("Academic Mentor", "Mr. Dinesh"),
         ("Delivery Milestone", "STEP 1 of 18 — Project Understanding Document"),
         ("Technology Baseline", "Python 3.11+, Streamlit, SQLite, Plotly Express, Pytest, Tailwind-styled UI")
     ]
@@ -103,7 +103,7 @@ def create_document():
         "stay (LOS) have triggered severe cost escalation across therapeutic departments. Hospital administrators, clinical directors, "
         "and health insurance claim managers frequently lack a unified, transparent analytical platform to track inpatient treatment cost trajectories, "
         "identify anomalous billing patterns, and project departmental expenditures. This project establishes an interactive, data-driven "
-        "Data Analytics & Cost Analytics Platform engineered to ingest longitudinal hospitalization data, execute statistical trend and "
+        "Data Analyst & Cost Analytics Platform engineered to ingest longitudinal hospitalization data, execute statistical trend and "
         "outlier analysis, and deliver actionable operational intelligence."
     )
     
@@ -124,7 +124,7 @@ def create_document():
     # Section 3: Intended Audience & User Personas
     doc.add_heading("3. Intended Audience & End-User Cadence", level=1)
     doc.add_paragraph(
-        "The web application serves three primary tiers of operational and strategic decision-makers within hospital networks and Data Analytics units:"
+        "The web application serves three primary tiers of operational and strategic decision-makers within hospital networks and Data Analyst units:"
     )
     
     aud_table = doc.add_table(rows=4, cols=4)
@@ -169,7 +169,7 @@ def create_document():
         ("SH-03", "Medical Billing & Claims Head", "Primary User", "Billing integrity, outlier detection, claim denials", "Medium", "Audit anomalous billing entries prior to insurer submission."),
         ("SH-04", "Health Insurance / TPA Analyst", "External Auditor", "Claim validity, actuarial cost benchmarking, pricing", "Medium", "Negotiate package rates and pre-authorization limits."),
         ("SH-05", "Data Analyst (Learner - Arohi)", "Lead Developer", "Model accuracy, interactive UX, statistical rigor", "High", "Select econometric models, visualization filters, and query flows."),
-        ("SH-06", "Academic Mentor (Kalpana Dwivedi)", "Evaluator / Guide", "Technical completeness, academic rigor, ABES standards", "High", "Assess rubric adherence, test coverage, and documentation.")
+        ("SH-06", "Academic Mentor (Mr. Dinesh)", "Evaluator / Guide", "Technical completeness, academic rigor, ABES standards", "High", "Assess rubric adherence, test coverage, and documentation.")
     ]
     for idx, row_vals in enumerate(sh_data):
         row = sh_table.rows[idx+1]
@@ -323,7 +323,7 @@ def create_document():
         ("SC-02", "System Performance", "Dashboard page rendering and query filtering response time under 1.5 seconds for a dataset of 2,500+ records."),
         ("SC-03", "Software Quality & Testing", "100% passing rate on automated test suite (Pytest) with minimum 85% code coverage across calculation and transformation logic."),
         ("SC-04", "Deployment & Accessibility", "100% availability on Streamlit Community Cloud with public HTTPS URL accessible to external evaluators without authentication hurdles."),
-        ("SC-05", "Academic Evaluation", "Complete compliance with ABES project guidelines, fully cross-referenced traceability matrix, and defense readiness before mentor Prof. Kalpana Dwivedi.")
+        ("SC-05", "Academic Evaluation", "Complete compliance with ABES project guidelines, fully cross-referenced traceability matrix, and defense readiness before mentor Mr. Dinesh.")
     ]
     for idx, row_vals in enumerate(sc_data):
         row = sc_table.rows[idx+1]

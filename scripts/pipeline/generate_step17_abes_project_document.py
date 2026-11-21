@@ -152,7 +152,7 @@ def build_abes_document():
         p_hdr = hdr.paragraphs[0]
         p_hdr.alignment = WD_ALIGN_PARAGRAPH.RIGHT
         p_hdr.paragraph_format.space_after = Pt(0)
-        r_hdr = p_hdr.add_run("ABES Engineering College | Project Document | 033")
+        r_hdr = p_hdr.add_run("ABES Engineering College | Project Document | P106")
         r_hdr.font.name = "Calibri"
         r_hdr.font.size = Pt(8)
         r_hdr.font.color.rgb = RGBColor(0x7F, 0x7F, 0x7F)
@@ -229,7 +229,7 @@ def build_abes_document():
     p_proj = doc.add_paragraph()
     p_proj.paragraph_format.space_before = Pt(0)
     p_proj.paragraph_format.space_after = Pt(12)
-    r_proj = p_proj.add_run("033 - Treatment Cost Trend Analysis")
+    r_proj = p_proj.add_run("P106 - Treatment Cost Trend Analysis")
     r_proj.font.name = "Georgia"
     r_proj.font.size = Pt(18)
     r_proj.font.color.rgb = RGBColor(0xA5, 0x1C, 0x30)
@@ -249,13 +249,13 @@ def build_abes_document():
     cover_table = doc.add_table(rows=8, cols=2)
     cover_widths = [2900, 6738]
     cover_data = [
-        ("Project ID & Title", "033 - Treatment Cost Trend Analysis"),
-        ("Domain", "Data Analysis (Data Analytics)"),
-        ("Programme / Batch", "MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch 033"),
+        ("Project ID & Title", "P106 - Treatment Cost Trend Analysis"),
+        ("Domain", "Data Analysis (Data Analyst)"),
+        ("Programme / Batch", "MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch P106"),
         ("Learner(s) & Roll No(s)", "Arohi Tyagi | Roll No: 2500320140033"),
-        ("Mentor", "Prof. Kalpana Dwivedi"),
-        ("GitHub repository", "https://github.com/arohityagi/033-treatment-cost-analysis"),
-        ("Live app (Streamlit)", "https://2500320140033-treatment-cost-analysis.streamlit.app"),
+        ("Mentor", "Mr. Dinesh"),
+        ("GitHub repository", "https://github.com/arohityagi/2500320140033-treatment-cost-trend-analysis"),
+        ("Live app (Streamlit)", "https://25003201402500320140033-treatment-cost-trend-analysis.streamlit.app"),
         ("Version & date", "v1.0 - 20/11/2026")
     ]
     for idx, (fld, val) in enumerate(cover_data):
@@ -290,7 +290,7 @@ def build_abes_document():
     t1 = doc.add_table(rows=7, cols=2)
     t1_widths = [2400, 7238]
     t1_data = [
-        ("Overview", "An interactive Data Analytics and Hospital Billing Analytics dashboard that tracks longitudinal inpatient treatment cost trends, detects anomalous charges, evaluates Length of Stay dynamics, and projects future expenditures."),
+        ("Overview", "An interactive Data Analyst and Hospital Billing Analytics dashboard that tracks longitudinal inpatient treatment cost trends, detects anomalous charges, evaluates Length of Stay dynamics, and projects future expenditures."),
         ("Problem statement", "Healthcare administrators, clinical heads, and insurance adjudicators lack an integrated, data-driven analytical tool to track treatment cost inflation, evaluate departmental expenditure variance, and detect anomalous billing patterns, leading to budget unpredictability, inefficient financial resource allocation, and elevated out-of-pocket burdens on patients."),
         ("Intended users", "Hospital Chief Financial Officers (weekly/monthly budget variance), Clinical Department Heads (bi-weekly procedure cost audits), and Health Insurance TPA Claims Managers (daily/weekly anomaly review)."),
         ("In scope", "Synthetic longitudinal multi-year hospitalization billing data (SQLite), exploratory data analysis, MoM cost inflation, procedure IQR variance, outlier detection (Tukey's fences), rolling 90-day forecasting, and Tailwind-styled Streamlit UI."),
@@ -351,7 +351,7 @@ def build_abes_document():
         ("SH-03", "Medical Billing & Claims Head", "Primary User", "Billing integrity, outlier detection, claim dispute prevention", "Medium"),
         ("SH-04", "Health Insurance / TPA Analyst", "External Auditor", "Claim validity, actuarial cost benchmarking, tariff negotiation", "Medium"),
         ("SH-05", "Lead Data Analyst (Arohi Tyagi)", "Lead Developer", "Model accuracy, interactive UX, statistical rigor", "High"),
-        ("SH-06", "Academic Mentor (Kalpana Dwivedi)", "Evaluator / Guide", "Technical completeness, academic rigor, ABES standards", "High")
+        ("SH-06", "Academic Mentor (Mr. Dinesh)", "Evaluator / Guide", "Technical completeness, academic rigor, ABES standards", "High")
     ]
     for idx, vals in enumerate(t3_data, 1):
         row = t3.rows[idx]
@@ -546,7 +546,7 @@ def build_abes_document():
     t7_dep_data = [
         ("1. Local", "streamlit run app.py && pytest tests/ -v", "App renders locally on localhost:8501 and all 16 tests pass."),
         ("2. GitHub", "git add . && git commit -m 'Release v1.0' && git push", "Repository updated with main branch, requirements.txt, and app.db."),
-        ("3. Streamlit Cloud", "share.streamlit.io -> Deploy from repo '033-treatment-cost-analysis'", "Live public HTTPS URL accessible with 0 build errors.")
+        ("3. Streamlit Cloud", "share.streamlit.io -> Deploy from repo '2500320140033-treatment-cost-trend-analysis'", "Live public HTTPS URL accessible with 0 build errors.")
     ]
     for idx, vals in enumerate(t7_dep_data, 1):
         row = t7_dep.rows[idx]
@@ -665,11 +665,11 @@ def build_abes_document():
     doc.add_heading("Appendix A - Prompt to generate this document", level=1)
     add_label(doc, "MY PREFERENCES", color_hex="A51C30")
     add_code(doc,
-        "PROJECT ID & TITLE: 033 - Treatment Cost Trend Analysis\n"
-        "DOMAIN: Data Analytics / Data Analytics\n"
+        "PROJECT ID & TITLE: P106 - Treatment Cost Trend Analysis\n"
+        "DOMAIN: Data Analyst / Data Analyst\n"
         "LEARNER(S) & ROLL NO(S): Arohi Tyagi | Roll No: 2500320140033\n"
-        "MENTOR: Prof. Kalpana Dwivedi\n"
-        "BATCH: MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch 033\n"
+        "MENTOR: Mr. Dinesh\n"
+        "BATCH: MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch P106\n"
         "INTENDED USERS: Hospital CFO, Clinical Department Heads, Health Insurance TPA Claims Managers\n"
         "PROBLEM IN MY WORDS: Healthcare costs escalate unpredictably due to medical inflation and unmonitored length of stay, while billing anomalies cause claim rejections.\n"
         "DATASET: Synthetic longitudinal hospitalization records (350 fact rows, 4 dimensions, 32 columns)\n"
@@ -683,7 +683,7 @@ def build_abes_document():
     add_code(doc,
         "# STEP 0 — Kickoff\n"
         "PROJECT: <treatment cost trend analysis> | DOMAIN: <Data analysis>\n"
-        "ME: <arohi tyagi>, Roll <2500320140033>, MCA 2nd yr DA, ABES | MENTOR: <Kalpana Dwivedi>\n"
+        "ME: <arohi tyagi>, Roll <2500320140033>, MCA 2nd yr DA, ABES | MENTOR: <Mr. Dinesh>\n"
         "PRODUCT: Python + Streamlit app (EDA, statistics, Plotly charts, Tailwind UI), SQLite data, pytest tests, on Streamlit Community Cloud.\n"
         "FINAL SUBMISSION: Project Document (ABES Word template) + ABES slide deck.\n"
         "STEPS: 1 Project understanding 2 HMW 3 Needs analysis (BR) 4 Traceability 5 BRD 6 PRD 7 TBD 8 Database design 9 ER diagram 10 Dataset generation 11 User stories 12 UI framework 13 Test cases 14 Build plan ID 15 Build, test, fix 16 Deploy 17 Project Document 18 Presentation"
@@ -706,7 +706,7 @@ def build_abes_document():
             row.cells[c_idx].paragraphs[0].add_run(val)
     format_abes_table(t_app, t_app_widths, has_header=True)
 
-    target_path = "docs/033_Project_Document.docx"
+    target_path = "docs/P106_Project_Document.docx"
     doc.save(target_path)
     print(f"Generated: {target_path}")
 

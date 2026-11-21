@@ -1,4 +1,4 @@
-"""
+﻿"""
 Generate Data Validation Report PDF — Step 8/10 LMS Submission
 Roll No: 2500320140033 | Arohi Tyagi
 """
@@ -115,7 +115,7 @@ def main():
     for label, val in [
         ("Learner",           "Arohi Tyagi"),
         ("Roll No",           "2500320140033"),
-        ("Mentor",            "Prof. Kalpana Dwivedi"),
+        ("Mentor",            "Mr. Dinesh"),
         ("Database File",     "data/app.db  (SQLite)"),
         ("Excel File",        "data/treatment_cost_data.xlsx"),
         ("Validation Status", "✅  100% PASSED"),

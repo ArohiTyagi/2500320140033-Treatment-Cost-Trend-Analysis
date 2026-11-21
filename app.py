@@ -223,7 +223,7 @@ with col_c2:
 
 # 7. Insight Callout Banner
 render_insight_box(
-    title="Key Data Analytics Observation",
+    title="Key Data Analyst Observation",
     text=f"Emergency inpatient admissions generate an average cost premium of ~31% over planned Elective procedures due to acute surgical intervention and extended ICU monitoring. Overall patient out-of-pocket payment share stands at {kpis['oop_pct']}%.",
     style="info"
 )

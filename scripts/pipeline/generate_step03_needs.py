@@ -75,7 +75,7 @@ def build_step03():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Author / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
+        ("Academic Mentor", "Mr. Dinesh"),
         ("Deliverable Step", "STEP 3 — Needs Analysis & Business Requirements (BR)"),
         ("Prioritization Standard", "MoSCoW (Must: ~58%, Should: 25%, Could: 8%, Won't: 8%)")
     ]

@@ -1,4 +1,4 @@
-"""
+﻿"""
 Generate Source Code PDF — Step 5 LMS Submission
 Combines all project .py files into one Word doc then saves.
 Roll No: 2500320140033 | Arohi Tyagi
@@ -136,8 +136,8 @@ def cover_page(doc):
     rows_data = [
         ("Learner", "Arohi Tyagi"),
         ("Roll No", "2500320140033"),
-        ("Programme / Batch", "MCA 2nd Year Data Analytics — ABES_OND26_MCA"),
-        ("Mentor", "Prof. Kalpana Dwivedi"),
+        ("Programme / Batch", "MCA 2nd Year Data Analyst — ABES_OND26_MCA"),
+        ("Mentor", "Mr. Dinesh"),
         ("GitHub Repository", "https://github.com/ArohiTyagi/2500320140033-Treatment-Cost-Trend-Analysis"),
         ("Total Files", f"{len(CODE_FILES)} Python source files"),
         ("Date", datetime.date.today().strftime("%d/%m/%Y")),

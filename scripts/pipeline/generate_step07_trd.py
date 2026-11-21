@@ -75,7 +75,7 @@ def build_step07_trd():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Student / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
+        ("Academic Mentor", "Mr. Dinesh"),
         ("Stack Baseline", "Python 3.12, Pandas, NumPy, SciPy, Plotly, Streamlit, Tailwind, SQLite, Pytest"),
         ("Hosting Target", "Streamlit Community Cloud (via GitHub)")
     ]

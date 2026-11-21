@@ -75,7 +75,7 @@ def build_step11():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Student / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
+        ("Academic Mentor", "Mr. Dinesh"),
         ("Agile Framework", "Scrum Framework (2 Sprints across 5 Epics, 13 User Stories, 42 Story Points)"),
         ("Acceptance Standard", "Gherkin Syntax (Given / When / Then) with 100% OQ Traceability")
     ]

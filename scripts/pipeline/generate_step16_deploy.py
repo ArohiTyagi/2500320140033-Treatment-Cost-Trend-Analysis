@@ -75,7 +75,7 @@ def build_step16():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Student / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
+        ("Academic Mentor", "Mr. Dinesh"),
         ("Target Platform", "Streamlit Community Cloud (Connected to GitHub)"),
         ("Production URL Pattern", "https://2500320140033-treatment-cost-analysis.streamlit.app")
     ]

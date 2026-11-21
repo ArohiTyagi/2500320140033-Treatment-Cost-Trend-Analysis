@@ -1,7 +1,7 @@
 ﻿import streamlit as st
 import streamlit.components.v1 as components
 
-def render_tailwind_header(title="Treatment Cost Trend Analysis", subtitle="Executive Data Analytics & Billing Intelligence Dashboard"):
+def render_tailwind_header(title="Treatment Cost Trend Analysis", subtitle="Executive Data Analyst & Billing Intelligence Dashboard"):
     """Renders an executive header using Tailwind CSS CDN via st.components.v1.html."""
     html_code = f"""
     <!DOCTYPE html>

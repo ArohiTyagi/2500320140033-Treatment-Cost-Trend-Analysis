@@ -60,7 +60,7 @@ def add_content_chrome(slide, title_text, slide_num):
     tf_f = tb_f.text_frame
     tf_f.vertical_anchor = MSO_ANCHOR.MIDDLE
     p_f = tf_f.paragraphs[0]
-    p_f.text = "HCLTech Career Shaper ABES Engineering College | 033 - Treatment Cost Trend Analysis"
+    p_f.text = "HCLTech Career Shaper ABES Engineering College | P106 - Treatment Cost Trend Analysis"
     p_f.font.name = "Calibri"
     p_f.font.size = Pt(9)
     p_f.font.color.rgb = C_GREY
@@ -173,7 +173,7 @@ def build_presentation():
     tf_t1 = tb_t1.text_frame
     tf_t1.vertical_anchor = MSO_ANCHOR.BOTTOM
     p_t1 = tf_t1.paragraphs[0]
-    p_t1.text = "033 - Treatment Cost Trend Analysis"
+    p_t1.text = "P106 - Treatment Cost Trend Analysis"
     p_t1.font.name = "Cambria"
     p_t1.font.size = Pt(36)
     p_t1.font.bold = True
@@ -185,9 +185,9 @@ def build_presentation():
     tf_l1.word_wrap = True
     
     lines = [
-        "Arohi Tyagi | Roll No 2500320140033",
+        "Arohi Tyagi | Roll No 2500320140P106",
         "MCA 2nd Year Data Analyst | ABES Engineering College",
-        "Mentor: Prof. Kalpana Dwivedi",
+        "Mentor: Mr. Dinesh",
         "20 November 2026"
     ]
     for idx, l in enumerate(lines):
@@ -199,7 +199,7 @@ def build_presentation():
         if idx > 0:
             p.space_before = Pt(4)
 
-    set_speaker_notes(s1, "Good morning respected evaluators. My name is Arohi Tyagi, roll number 2500320140033. Today I present my MCA 2nd Year capstone project, Treatment Cost Trend Analysis, developed under the mentorship of Prof. Kalpana Dwivedi. This platform provides hospital administrators and financial leaders with clear visibility into treatment cost inflation, bed occupancy efficiency, and anomalous billing patterns.")
+    set_speaker_notes(s1, "Good morning respected evaluators. My name is Arohi Tyagi, roll number 2500320140P106. Today I present my MCA 2nd Year capstone project, Treatment Cost Trend Analysis, developed under the mentorship of Mr. Dinesh. This platform provides hospital administrators and financial leaders with clear visibility into treatment cost inflation, bed occupancy efficiency, and anomalous billing patterns.")
 
     # =========================================================================
     # SLIDE 2: CONTENT "Problem and How Might We"
@@ -236,7 +236,7 @@ def build_presentation():
     sh_cards = [
         (0.5, "1", "Primary User", "Hospital CFO / Finance Lead\n\nNeeds: Longitudinal expenditure tracking and quarterly budget forecasting.\n\nInfluence: High"),
         (3.55, "2", "Secondary User", "Medical Billing & Claims Lead\n\nNeeds: Automated billing outlier detection before insurance claim submission.\n\nInfluence: Medium"),
-        (6.6, "3", "Mentor & Evaluator", "Prof. Kalpana Dwivedi (ABES)\n\nNeeds: Methodological rigor, data integrity, automated testing, and rubric compliance.\n\nInfluence: High")
+        (6.6, "3", "Mentor & Evaluator", "Mr. Dinesh (ABES)\n\nNeeds: Methodological rigor, data integrity, automated testing, and rubric compliance.\n\nInfluence: High")
     ]
     for x, badge, head, body in sh_cards:
         add_badge_card(s3, x, 1.35, 2.85, 3.5, badge, head, body)
@@ -625,8 +625,8 @@ def build_presentation():
     tf_l11.word_wrap = True
     
     end_lines = [
-        "App: https://2500320140033-treatment-cost-analysis.streamlit.app",
-        "Code: https://github.com/arohityagi/033-treatment-cost-analysis",
+        "App: https://2500320140P106-treatment-cost-analysis.streamlit.app",
+        "Code: https://github.com/arohityagi/P106-treatment-cost-analysis",
         "Thank you"
     ]
     for idx, el in enumerate(end_lines):
@@ -641,7 +641,7 @@ def build_presentation():
     set_speaker_notes(s11, "I will now open the live Streamlit dashboard for interactive demonstration and welcome any questions from the examination committee. Thank you very much for your time and guidance.")
 
     # Save presentation
-    target_path = "docs/033_Presentation.pptx"
+    target_path = "docs/P106_Presentation.pptx"
     prs.save(target_path)
     print(f"Generated: {target_path}")
 

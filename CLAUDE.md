@@ -2,10 +2,10 @@
 
 ## Metadata
 - **Project**: Treatment Cost Trend Analysis
-- **Domain**: Data Analytics
+- **Domain**: Data Analyst
 - **Learner**: Arohi Tyagi (Roll No: 2500320140033)
-- **Course**: MCA 2nd Year (Data Analytics), ABES
-- **Mentor**: Kalpana Dwivedi
+- **Course**: MCA 2nd Year (Data Analyst), ABES
+- **Mentor**: Mr. Dinesh
 - **Product Stack**: Python, Streamlit, SQLite, Plotly, Tailwind UI styling, Pytest
 - **Deployment**: Streamlit Community Cloud
 - **Deliverables**: ABES Word Project Report + ABES Slide Deck

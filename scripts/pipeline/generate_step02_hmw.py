@@ -75,7 +75,7 @@ def build_step02():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Student / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
+        ("Academic Mentor", "Mr. Dinesh"),
         ("Deliverable Step", "STEP 2 — Design Thinking HMW Framework"),
         ("Linked Operational Questions", "OQ-01 through OQ-10 (100% Coverage)")
     ]
@@ -116,7 +116,7 @@ def build_step02():
             "Need to ensure analytical algorithms remain robust against noisy, skewed healthcare distributions.",
             "Need to deliver sub-second dashboard rendering on Streamlit Cloud without complex server management."
         ]),
-        ("SH-06: Academic Mentor (Prof. Kalpana Dwivedi)", [
+        ("SH-06: Academic Mentor (Mr. Dinesh)", [
             "Ensuring rigorous traceability between business pain points, quantitative models, and ABES curriculum requirements.",
             "Verifying that all operational questions are backed by reproducible data pipelines and automated tests."
         ])

@@ -75,7 +75,7 @@ def build_step12():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Student / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
+        ("Academic Mentor", "Mr. Dinesh"),
         ("UI Technology", "Streamlit 1.38+, Tailwind CSS via st.components.v1.html, Plotly Express"),
         ("Theme Palette", "ABES Burgundy (#A51C30), Deep Navy (#1B365D), Off-White (#F4F1F1)")
     ]

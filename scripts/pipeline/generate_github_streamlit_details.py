@@ -146,7 +146,7 @@ def main():
     for label, val in [
         ("Learner",           "Arohi Tyagi"),
         ("Roll No",           "2500320140033"),
-        ("Mentor",            "Prof. Kalpana Dwivedi"),
+        ("Mentor",            "Mr. Dinesh"),
         ("GitHub URL",        GITHUB_URL),
         ("Streamlit URL",     STREAMLIT_URL),
         ("Date",              datetime.date.today().strftime("%d/%m/%Y")),
@@ -168,7 +168,7 @@ def main():
     label_val(doc, "Owner",            "ArohiTyagi")
     label_val(doc, "Branch",           "main")
     label_val(doc, "Visibility",       "Public")
-    label_val(doc, "Last Commit",      "Fix: mentor Kalpana Dwivedi, domain Data Analytics, regenerate all docs + PDFs")
+    label_val(doc, "Last Commit",      "Fix: mentor Mr. Dinesh, domain Data Analyst, regenerate all docs + PDFs")
     label_val(doc, "Total Commits",    "5")
     label_val(doc, "Key Files at Root","app.py, requirements.txt, README.md, .gitignore")
 

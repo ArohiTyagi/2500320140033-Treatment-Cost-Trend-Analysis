@@ -1,4 +1,4 @@
-"""
+﻿"""
 Generate Source Code PDF using ReportLab — fast, no Word required.
 Roll No: 2500320140033 | Arohi Tyagi
 """
@@ -92,8 +92,8 @@ def build_pdf():
     cover_data = [
         ["Learner",           "Arohi Tyagi"],
         ["Roll No",           "2500320140033"],
-        ["Programme / Batch", "MCA 2nd Year Data Analytics — ABES_OND26_MCA"],
-        ["Mentor",            "Prof. Kalpana Dwivedi"],
+        ["Programme / Batch", "MCA 2nd Year Data Analyst — ABES_OND26_MCA"],
+        ["Mentor",            "Mr. Dinesh"],
         ["Total Files",       f"{len(CODE_FILES)} Python source files"],
         ["Date",              datetime.date.today().strftime("%d/%m/%Y")],
     ]

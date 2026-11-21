@@ -1,20 +1,20 @@
-﻿# 🏥 Treatment Cost Trend Analysis (Project ID: 033)
+﻿# 🏥 Treatment Cost Trend Analysis (Project ID: P106)
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://2500320140033-treatment-cost-analysis.streamlit.app)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tests: Pytest](https://img.shields.io/badge/Tests-16%20Passed-brightgreen.svg)](https://pytest.org/)
 
-An enterprise-grade **Data Analytics & Inpatient Billing Analytics Platform** engineered to track longitudinal medical cost inflation, evaluate Length of Stay (LOS) dynamics, identify anomalous billing patterns, and project departmental expenditures.
+An enterprise-grade **Data Analyst & Inpatient Billing Analytics Platform** engineered to track longitudinal medical cost inflation, evaluate Length of Stay (LOS) dynamics, identify anomalous billing patterns, and project departmental expenditures.
 
 ---
 
 ## 👨‍🎓 Project Details
 - **Student / Author:** Arohi Tyagi
 - **Roll Number:** 2500320140033
-- **Program:** MCA 2nd Year (Data Analytics Specialization)
+- **Program:** MCA 2nd Year (Data Analyst Specialization)
 - **Institution:** ABES Engineering College, Ghaziabad
-- **Academic Mentor:** Prof. Kalpana Dwivedi
+- **Academic Mentor:** Mr. Dinesh
 - **Repository:** [2500320140033-Treatment-Cost-Trend-Analysis](https://github.com/ArohiTyagi/2500320140033-Treatment-Cost-Trend-Analysis.git)
 - **Live Deployment:** [Streamlit Community Cloud](https://2500320140033-treatment-cost-analysis.streamlit.app)
 
@@ -113,7 +113,7 @@ tests/test_data.py::test_analytical_view_exists_and_populated PASSED     [100%]
 ---
 
 ## 📜 Academic Deliverables
-- **ABES Project Document:** [`docs/033_Project_Document.docx`](docs/033_Project_Document.docx)
-- **ABES Defense Slide Deck:** [`docs/033_Presentation.pptx`](docs/033_Presentation.pptx)
+- **ABES Project Document:** [`docs/P106_Project_Document.docx`](docs/P106_Project_Document.docx)
+- **ABES Defense Slide Deck:** [`docs/P106_Presentation.pptx`](docs/P106_Presentation.pptx)
 - **Requirements Traceability Matrix:** [`docs/04_Traceability_Matrix.xlsx`](docs/04_Traceability_Matrix.xlsx)
 - **Database Design Specification:** [`docs/08_Database_Design.xlsx`](docs/08_Database_Design.xlsx)
