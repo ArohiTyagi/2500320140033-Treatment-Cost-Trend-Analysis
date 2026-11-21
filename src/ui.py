@@ -19,15 +19,10 @@ def render_tailwind_header(title="Treatment Cost Trend Analysis", subtitle="Exec
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
                 <div>
                     <div class="flex items-center space-x-2">
-                        <span class="bg-[#A51C30] text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-white">MCA Project 033</span>
                         <span class="text-xs text-slate-300 font-medium">ABES Engineering College</span>
                     </div>
                     <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-1">{title}</h1>
                     <p class="text-xs md:text-sm text-slate-200 mt-1">{subtitle}</p>
-                </div>
-                <div class="mt-3 md:mt-0 text-right">
-                    <p class="text-xs text-slate-300 font-semibold">Author: Arohi Tyagi (2500320140033)</p>
-                    <p class="text-xs text-slate-300">Mentor: Prof. Kalpana Dwivedi</p>
                 </div>
             </div>
         </div>
