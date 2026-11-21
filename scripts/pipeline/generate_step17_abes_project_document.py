@@ -1,4 +1,4 @@
-import docx
+﻿import docx
 from docx.shared import Inches, Pt, RGBColor, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
@@ -250,10 +250,10 @@ def build_abes_document():
     cover_widths = [2900, 6738]
     cover_data = [
         ("Project ID & Title", "033 - Treatment Cost Trend Analysis"),
-        ("Domain", "Data Analysis (Healthcare Analytics & Health Economics)"),
+        ("Domain", "Data Analysis (Data Analytics)"),
         ("Programme / Batch", "MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch 033"),
         ("Learner(s) & Roll No(s)", "Arohi Tyagi | Roll No: 2500320140033"),
-        ("Mentor", "Prof. Alpana Lodhi"),
+        ("Mentor", "Prof. Kalpana Dwivedi"),
         ("GitHub repository", "https://github.com/arohityagi/033-treatment-cost-analysis"),
         ("Live app (Streamlit)", "https://2500320140033-treatment-cost-analysis.streamlit.app"),
         ("Version & date", "v1.0 - 20/11/2026")
@@ -290,7 +290,7 @@ def build_abes_document():
     t1 = doc.add_table(rows=7, cols=2)
     t1_widths = [2400, 7238]
     t1_data = [
-        ("Overview", "An interactive Health Economics and Hospital Billing Analytics dashboard that tracks longitudinal inpatient treatment cost trends, detects anomalous charges, evaluates Length of Stay dynamics, and projects future expenditures."),
+        ("Overview", "An interactive Data Analytics and Hospital Billing Analytics dashboard that tracks longitudinal inpatient treatment cost trends, detects anomalous charges, evaluates Length of Stay dynamics, and projects future expenditures."),
         ("Problem statement", "Healthcare administrators, clinical heads, and insurance adjudicators lack an integrated, data-driven analytical tool to track treatment cost inflation, evaluate departmental expenditure variance, and detect anomalous billing patterns, leading to budget unpredictability, inefficient financial resource allocation, and elevated out-of-pocket burdens on patients."),
         ("Intended users", "Hospital Chief Financial Officers (weekly/monthly budget variance), Clinical Department Heads (bi-weekly procedure cost audits), and Health Insurance TPA Claims Managers (daily/weekly anomaly review)."),
         ("In scope", "Synthetic longitudinal multi-year hospitalization billing data (SQLite), exploratory data analysis, MoM cost inflation, procedure IQR variance, outlier detection (Tukey's fences), rolling 90-day forecasting, and Tailwind-styled Streamlit UI."),
@@ -351,7 +351,7 @@ def build_abes_document():
         ("SH-03", "Medical Billing & Claims Head", "Primary User", "Billing integrity, outlier detection, claim dispute prevention", "Medium"),
         ("SH-04", "Health Insurance / TPA Analyst", "External Auditor", "Claim validity, actuarial cost benchmarking, tariff negotiation", "Medium"),
         ("SH-05", "Lead Data Analyst (Arohi Tyagi)", "Lead Developer", "Model accuracy, interactive UX, statistical rigor", "High"),
-        ("SH-06", "Academic Mentor (Alpana Lodhi)", "Evaluator / Guide", "Technical completeness, academic rigor, ABES standards", "High")
+        ("SH-06", "Academic Mentor (Kalpana Dwivedi)", "Evaluator / Guide", "Technical completeness, academic rigor, ABES standards", "High")
     ]
     for idx, vals in enumerate(t3_data, 1):
         row = t3.rows[idx]
@@ -666,9 +666,9 @@ def build_abes_document():
     add_label(doc, "MY PREFERENCES", color_hex="A51C30")
     add_code(doc,
         "PROJECT ID & TITLE: 033 - Treatment Cost Trend Analysis\n"
-        "DOMAIN: Healthcare Data Analytics / Health Economics\n"
+        "DOMAIN: Data Analytics / Data Analytics\n"
         "LEARNER(S) & ROLL NO(S): Arohi Tyagi | Roll No: 2500320140033\n"
-        "MENTOR: Prof. Alpana Lodhi\n"
+        "MENTOR: Prof. Kalpana Dwivedi\n"
         "BATCH: MCA 2nd Year Data Analyst - ABES_OND26_MCA Batch 033\n"
         "INTENDED USERS: Hospital CFO, Clinical Department Heads, Health Insurance TPA Claims Managers\n"
         "PROBLEM IN MY WORDS: Healthcare costs escalate unpredictably due to medical inflation and unmonitored length of stay, while billing anomalies cause claim rejections.\n"
@@ -683,7 +683,7 @@ def build_abes_document():
     add_code(doc,
         "# STEP 0 — Kickoff\n"
         "PROJECT: <treatment cost trend analysis> | DOMAIN: <Data analysis>\n"
-        "ME: <arohi tyagi>, Roll <2500320140033>, MCA 2nd yr DA, ABES | MENTOR: <alpana lodhi>\n"
+        "ME: <arohi tyagi>, Roll <2500320140033>, MCA 2nd yr DA, ABES | MENTOR: <Kalpana Dwivedi>\n"
         "PRODUCT: Python + Streamlit app (EDA, statistics, Plotly charts, Tailwind UI), SQLite data, pytest tests, on Streamlit Community Cloud.\n"
         "FINAL SUBMISSION: Project Document (ABES Word template) + ABES slide deck.\n"
         "STEPS: 1 Project understanding 2 HMW 3 Needs analysis (BR) 4 Traceability 5 BRD 6 PRD 7 TBD 8 Database design 9 ER diagram 10 Dataset generation 11 User stories 12 UI framework 13 Test cases 14 Build plan ID 15 Build, test, fix 16 Deploy 17 Project Document 18 Presentation"

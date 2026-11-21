@@ -1,4 +1,4 @@
-import docx
+﻿import docx
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
@@ -75,7 +75,7 @@ def build_step16():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Student / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Alpana Lodhi"),
+        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
         ("Target Platform", "Streamlit Community Cloud (Connected to GitHub)"),
         ("Production URL Pattern", "https://2500320140033-treatment-cost-analysis.streamlit.app")
     ]

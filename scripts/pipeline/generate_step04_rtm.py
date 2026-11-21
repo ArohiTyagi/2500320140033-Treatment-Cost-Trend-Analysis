@@ -1,4 +1,4 @@
-import openpyxl
+﻿import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
@@ -52,7 +52,7 @@ def build_step04_rtm():
     
     ws_rtm.merge_cells("A2:L2")
     sub_cell = ws_rtm["A2"]
-    sub_cell.value = "Author: Arohi Tyagi (Roll No: 2500320140033) | Mentor: Prof. Alpana Lodhi | ABES Engineering College"
+    sub_cell.value = "Author: Arohi Tyagi (Roll No: 2500320140033) | Mentor: Prof. Kalpana Dwivedi | ABES Engineering College"
     sub_cell.font = Font(name="Calibri", size=10, italic=True, color="5A6978")
     sub_cell.alignment = Alignment(horizontal="center", vertical="center")
     ws_rtm.row_dimensions[2].height = 18

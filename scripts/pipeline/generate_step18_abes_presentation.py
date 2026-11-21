@@ -1,4 +1,4 @@
-import pptx
+﻿import pptx
 from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
@@ -187,7 +187,7 @@ def build_presentation():
     lines = [
         "Arohi Tyagi | Roll No 2500320140033",
         "MCA 2nd Year Data Analyst | ABES Engineering College",
-        "Mentor: Prof. Alpana Lodhi",
+        "Mentor: Prof. Kalpana Dwivedi",
         "20 November 2026"
     ]
     for idx, l in enumerate(lines):
@@ -199,7 +199,7 @@ def build_presentation():
         if idx > 0:
             p.space_before = Pt(4)
 
-    set_speaker_notes(s1, "Good morning respected evaluators. My name is Arohi Tyagi, roll number 2500320140033. Today I present my MCA 2nd Year capstone project, Treatment Cost Trend Analysis, developed under the mentorship of Prof. Alpana Lodhi. This platform provides hospital administrators and financial leaders with clear visibility into treatment cost inflation, bed occupancy efficiency, and anomalous billing patterns.")
+    set_speaker_notes(s1, "Good morning respected evaluators. My name is Arohi Tyagi, roll number 2500320140033. Today I present my MCA 2nd Year capstone project, Treatment Cost Trend Analysis, developed under the mentorship of Prof. Kalpana Dwivedi. This platform provides hospital administrators and financial leaders with clear visibility into treatment cost inflation, bed occupancy efficiency, and anomalous billing patterns.")
 
     # =========================================================================
     # SLIDE 2: CONTENT "Problem and How Might We"
@@ -236,7 +236,7 @@ def build_presentation():
     sh_cards = [
         (0.5, "1", "Primary User", "Hospital CFO / Finance Lead\n\nNeeds: Longitudinal expenditure tracking and quarterly budget forecasting.\n\nInfluence: High"),
         (3.55, "2", "Secondary User", "Medical Billing & Claims Lead\n\nNeeds: Automated billing outlier detection before insurance claim submission.\n\nInfluence: Medium"),
-        (6.6, "3", "Mentor & Evaluator", "Prof. Alpana Lodhi (ABES)\n\nNeeds: Methodological rigor, data integrity, automated testing, and rubric compliance.\n\nInfluence: High")
+        (6.6, "3", "Mentor & Evaluator", "Prof. Kalpana Dwivedi (ABES)\n\nNeeds: Methodological rigor, data integrity, automated testing, and rubric compliance.\n\nInfluence: High")
     ]
     for x, badge, head, body in sh_cards:
         add_badge_card(s3, x, 1.35, 2.85, 3.5, badge, head, body)

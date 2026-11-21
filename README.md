@@ -1,11 +1,11 @@
-# 🏥 Treatment Cost Trend Analysis (Project ID: 033)
+﻿# 🏥 Treatment Cost Trend Analysis (Project ID: 033)
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://2500320140033-treatment-cost-analysis.streamlit.app)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tests: Pytest](https://img.shields.io/badge/Tests-16%20Passed-brightgreen.svg)](https://pytest.org/)
 
-An enterprise-grade **Health Economics & Inpatient Billing Analytics Platform** engineered to track longitudinal medical cost inflation, evaluate Length of Stay (LOS) dynamics, identify anomalous billing patterns, and project departmental expenditures.
+An enterprise-grade **Data Analytics & Inpatient Billing Analytics Platform** engineered to track longitudinal medical cost inflation, evaluate Length of Stay (LOS) dynamics, identify anomalous billing patterns, and project departmental expenditures.
 
 ---
 
@@ -14,7 +14,7 @@ An enterprise-grade **Health Economics & Inpatient Billing Analytics Platform** 
 - **Roll Number:** 2500320140033
 - **Program:** MCA 2nd Year (Data Analytics Specialization)
 - **Institution:** ABES Engineering College, Ghaziabad
-- **Academic Mentor:** Prof. Alpana Lodhi
+- **Academic Mentor:** Prof. Kalpana Dwivedi
 - **Repository:** [2500320140033-Treatment-Cost-Trend-Analysis](https://github.com/ArohiTyagi/2500320140033-Treatment-Cost-Trend-Analysis.git)
 - **Live Deployment:** [Streamlit Community Cloud](https://2500320140033-treatment-cost-analysis.streamlit.app)
 

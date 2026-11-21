@@ -1,11 +1,11 @@
-# Project Configuration & Guidelines: Treatment Cost Trend Analysis
+﻿# Project Configuration & Guidelines: Treatment Cost Trend Analysis
 
 ## Metadata
 - **Project**: Treatment Cost Trend Analysis
-- **Domain**: Healthcare Data Analytics
+- **Domain**: Data Analytics
 - **Learner**: Arohi Tyagi (Roll No: 2500320140033)
 - **Course**: MCA 2nd Year (Data Analytics), ABES
-- **Mentor**: Alpana Lodhi
+- **Mentor**: Kalpana Dwivedi
 - **Product Stack**: Python, Streamlit, SQLite, Plotly, Tailwind UI styling, Pytest
 - **Deployment**: Streamlit Community Cloud
 - **Deliverables**: ABES Word Project Report + ABES Slide Deck

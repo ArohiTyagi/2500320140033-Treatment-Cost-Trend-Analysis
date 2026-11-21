@@ -1,4 +1,4 @@
-import docx
+﻿import docx
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
@@ -79,7 +79,7 @@ def build_step05_brd():
     dc_table.rows[0].cells[3].paragraphs[0].add_run("Release Status / Remarks")
 
     dc_data = [
-        ("v1.0", "Arohi Tyagi (Lead Analyst)", "Prof. Alpana Lodhi", "Initial Baseline Approval"),
+        ("v1.0", "Arohi Tyagi (Lead Analyst)", "Prof. Kalpana Dwivedi", "Initial Baseline Approval"),
         ("Project ID", "033 - Trend Cost Analysis", "Department", "MCA 2nd Yr (Data Analytics), ABES"),
         ("Date", "November 2026", "Environment", "Streamlit Cloud / SQLite"),
         ("Classification", "Academic Enterprise Capstone", "Traceability Status", "100% Traceable to HMW & OQ")
@@ -333,7 +333,7 @@ def build_step05_brd():
 
     sign_data = [
         ("Arohi Tyagi", "Lead Student Analyst (Roll: 2500320140033)", "Approved", "20/11/2026"),
-        ("Prof. Alpana Lodhi", "Academic Mentor & Evaluator, ABES", "Approved", "20/11/2026"),
+        ("Prof. Kalpana Dwivedi", "Academic Mentor & Evaluator, ABES", "Approved", "20/11/2026"),
         ("Hospital Advisory Panel", "Academic Healthcare Subject Proxy", "Approved", "20/11/2026")
     ]
     for idx, vals in enumerate(sign_data):

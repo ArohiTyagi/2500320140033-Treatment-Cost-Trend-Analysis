@@ -1,4 +1,4 @@
-import docx
+﻿import docx
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
@@ -75,7 +75,7 @@ def build_step02():
     meta_data = [
         ("Project Title", "Treatment Cost Trend Analysis"),
         ("Student / Roll No", "Arohi Tyagi | Roll No: 2500320140033 | MCA 2nd Yr DA, ABES"),
-        ("Academic Mentor", "Prof. Alpana Lodhi"),
+        ("Academic Mentor", "Prof. Kalpana Dwivedi"),
         ("Deliverable Step", "STEP 2 — Design Thinking HMW Framework"),
         ("Linked Operational Questions", "OQ-01 through OQ-10 (100% Coverage)")
     ]
@@ -116,7 +116,7 @@ def build_step02():
             "Need to ensure analytical algorithms remain robust against noisy, skewed healthcare distributions.",
             "Need to deliver sub-second dashboard rendering on Streamlit Cloud without complex server management."
         ]),
-        ("SH-06: Academic Mentor (Prof. Alpana Lodhi)", [
+        ("SH-06: Academic Mentor (Prof. Kalpana Dwivedi)", [
             "Ensuring rigorous traceability between business pain points, quantitative models, and ABES curriculum requirements.",
             "Verifying that all operational questions are backed by reproducible data pipelines and automated tests."
         ])
